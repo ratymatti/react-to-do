@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 
+import AddElement from './components/AddElement/AddElement';
+import ListContainer from './components/ListContainer/ListContainer';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      tasks: []
+      tasks: [{id: 0, value: 'testi 1'}, {id: 1, value: 'testi 2'}, {id: 2, value: 'testi 3'},]
     }
 
     this.addTask = this.addTask.bind(this);
@@ -24,12 +27,8 @@ class App extends React.Component {
     return (
       <div className="App">
           <h1>TO-DO App</h1>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>  
-        
+          <AddElement />
+          <ListContainer taskList={this.state.tasks}/>
       </div>
     );
   }
