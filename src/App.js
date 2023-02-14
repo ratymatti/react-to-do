@@ -13,6 +13,7 @@ class App extends React.Component {
     }
 
     this.addTask = this.addTask.bind(this);
+    this.removeTask = this.removeTask.bind(this);
   }
 
   addTask(task) {
@@ -23,12 +24,21 @@ class App extends React.Component {
     this.setState({ tasks: tasks })
   }
 
+  removeTask(task) {
+    let tasksToRemovedFrom = this.state.tasks;
+
+    tasksToRemovedFrom = tasksToRemovedFrom.filter(currentTask => currentTask.id !== task.id);
+
+    this.setState({ tasks: tasksToRemovedFrom});
+  }
+
   render() {
     return (
       <div className="App">
           <h1>TO-DO App</h1>
           <AddElement />
-          <ListContainer taskList={this.state.tasks}/>
+          <ListContainer taskList={this.state.tasks}
+                          onRemove={this.removeTask} />
       </div>
     );
   }

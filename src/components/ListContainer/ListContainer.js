@@ -9,7 +9,8 @@ class ListContainer extends React.Component {
                 {
                    this.props.taskList.map(task => {
                         return <ListElement     task={task}
-                                                key={task.id} /> 
+                                                key={task.id}
+                                                onRemove={this.props.onRemove} /> 
                    }) 
                 }
             </div>
