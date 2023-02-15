@@ -19,7 +19,7 @@ class App extends React.Component {
   addTask(task) {
     let tasks = this.state.tasks;
 
-    tasks.push(task);
+    tasks.push({id: (tasks.length + 1), value: task});
 
     this.setState({ tasks: tasks })
   }
@@ -36,8 +36,8 @@ class App extends React.Component {
     return (
       <div className="App">
           <h1>TO-DO App</h1>
-          <AddElement />
-          <ListContainer taskList={this.state.tasks}
+          <AddElement onAdd={this.addTask} />
+          <ListContainer  taskList={this.state.tasks}
                           onRemove={this.removeTask} />
       </div>
     );
