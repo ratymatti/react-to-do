@@ -1,0 +1,47 @@
+:root {
+    --background: #FE5F55;
+    --darkest: #4F6367;
+    --darker: #7A9E9F;
+    --dark: #B8D8D8;
+    --sand: #EEF5DB;
+  }
+
+* {
+    border: 0px;
+    border-radius: 5px;
+} 
+
+.addTasks {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.addTasks input {
+    width: 60%;
+    background-color: var(--dark);
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 20px;
+    color: var(--darkest)
+}
+
+.addTasks input:focus {
+    outline: none;
+}
+
+.addTasks input::placeholder {
+    color: var(--darkest)
+}
+
+.addTasks button {
+    background-color: var(--darker);
+    color: var(--sand);
+    font-weight: bold;
+}
+
+.addTasks button:hover {
+    cursor: pointer;
+}

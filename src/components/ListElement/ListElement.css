@@ -1,0 +1,35 @@
+:root {
+    --background: #FE5F55;
+    --darkest: #4F6367;
+    --darker: #7A9E9F;
+    --dark: #B8D8D8;
+    --sand: #EEF5DB;
+  }
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    color: var(--darkest);
+    margin: 3px 0px;
+    justify-content: space-between;
+    width: 90%;
+    overflow: scroll;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.tasks p {
+    margin-left: 5px;
+}
+
+.tasks button {
+    background-color: var(--background);
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+}
+
+.tasks button:hover {
+    cursor: pointer;
+}

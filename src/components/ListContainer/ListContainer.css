@@ -1,0 +1,19 @@
+:root {
+    --background: #FE5F55;
+    --darkest: #4F6367;
+    --darker: #7A9E9F;
+    --dark: #B8D8D8;
+    --sand: #EEF5DB;
+  }
+
+.tasksList {
+    background-color: var(--darker);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    min-height: 150px;
+}
+
+
