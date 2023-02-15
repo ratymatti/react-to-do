@@ -15,6 +15,7 @@ class AddElement extends React.Component {
 
     addNewTask() {
         this.props.onAdd(this.state.taskToAdd);
+        this.setState({ taskToAdd: '' });
     }
 
     handleChange(event) {
@@ -24,7 +25,7 @@ class AddElement extends React.Component {
     render() {
         return (
             <div className="addTasks">
-                <input onSubmit={this.handleChange} onChange={this.handleChange} placeholder="Add new task"></input>
+                <input onSubmit={this.handleChange}  onChange={this.handleChange} value={this.state.taskToAdd} placeholder="Add new task"></input>
                 <button onClick={this.addNewTask} className="addButton">Add task</button>
             </div>
         )
