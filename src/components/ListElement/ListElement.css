@@ -24,10 +24,13 @@
 }
 
 .tasks button {
-    background-color: var(--background);
+    background-color: var(--darkest);
     border-radius: 5px;
     border: 0px;
     margin: 5px;
+    width: 2rem;
+    font-weight: bold;
+    color: var(--darker);
 }
 
 .tasks button:hover {

@@ -15,7 +15,7 @@ class ListElement extends React.Component {
         return (
             <div className="tasks">
                 <p>{this.props.task.value}</p>
-                <button onClick={this.removeTask}>-</button>
+                <button onClick={this.removeTask}>x</button>
             </div>
         )
     }
