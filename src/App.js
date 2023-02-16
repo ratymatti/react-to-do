@@ -3,6 +3,7 @@ import './App.css';
 
 import AddElement from './components/AddElement/AddElement';
 import ListContainer from './components/ListContainer/ListContainer';
+import Date from './components/Date/Date';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class App extends React.Component {
 
     this.state = {
       tasks: [{id: 0, value: 'testi 1'}, {id: 1, value: 'testi 2'}, {id: 2, value: 'testi 3'},]
+      
     }
 
     this.addTask = this.addTask.bind(this);
@@ -35,7 +37,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <h1>Stuff to do</h1>
+          <div className="header">
+             <Date />
+            <h1>Stuff to do</h1>
+          </div>
           <AddElement onAdd={this.addTask} />
           <ListContainer  taskList={this.state.tasks}
                           onRemove={this.removeTask} />
