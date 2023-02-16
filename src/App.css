@@ -10,7 +10,9 @@
   background-color: var(--sand);
   text-align: center;
   min-height: 400px;
+  min-width: 600px;
   padding-bottom: 20px;
+  margin-top: 50px;
 }
 
 .App h1 {
