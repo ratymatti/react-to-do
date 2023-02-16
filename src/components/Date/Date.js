@@ -6,7 +6,7 @@ const setDate = () => {
     let date = new Date();
 
     date = { 
-        day: date.getDay(), 
+        day: date.getDate(), 
         month: date.toLocaleString('default', { month: 'short' }).toUpperCase(), 
         year: date.getFullYear() 
     }
