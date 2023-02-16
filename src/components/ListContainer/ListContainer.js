@@ -5,15 +5,17 @@ import ListElement from "../ListElement/ListElement";
 class ListContainer extends React.Component {
     render() {
         return (
-            <div className="tasksList">
-                {
-                   this.props.taskList.map(task => {
-                        return <ListElement     task={task}
-                                                key={task.id}
-                                                onRemove={this.props.onRemove} /> 
-                   }) 
-                }
-            </div>
+            <div>
+                {this.props.taskList.length !== 0 && <div className="tasksList">
+                    {
+                    this.props.taskList.map(task => {
+                            return <ListElement     task={task}
+                                                    key={task.id}
+                                                    onRemove={this.props.onRemove} /> 
+                    }) 
+                    }
+                </div>}
+            </div>    
         )
     }
 }

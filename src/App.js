@@ -4,14 +4,14 @@ import './App.css';
 import AddElement from './components/AddElement/AddElement';
 import ListContainer from './components/ListContainer/ListContainer';
 import Date from './components/Date/Date';
+import getDate from './components/GetDate/GetDate';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      tasks: [{id: 0, value: 'testi 1'}, {id: 1, value: 'testi 2'}, {id: 2, value: 'testi 3'},]
-      
+      tasks: []
     }
 
     this.addTask = this.addTask.bind(this);
@@ -21,7 +21,7 @@ class App extends React.Component {
   addTask(task) {
     let tasks = this.state.tasks;
 
-    tasks.push({id: (tasks.length + 1), value: task});
+    tasks.push({id: (getDate()), value: task});
 
     this.setState({ tasks: tasks })
   }
@@ -39,7 +39,7 @@ class App extends React.Component {
       <div className="App">
           <div className="header">
              <Date />
-            <h1>Stuff to do</h1>
+            <h1>STUFF TO DO</h1>
           </div>
           <AddElement onAdd={this.addTask} />
           <ListContainer  taskList={this.state.tasks}

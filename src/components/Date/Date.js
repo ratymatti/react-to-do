@@ -1,7 +1,5 @@
 import React from "react";
-
 import './Date.css';
-
 
 const setDate = () => {
     
@@ -30,6 +28,5 @@ const setDate = () => {
     )
 };
 
-
-export default setDate;
+export default  setDate;
 
