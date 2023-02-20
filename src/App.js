@@ -19,11 +19,13 @@ class App extends React.Component {
   }
 
   addTask(task) {
-    let tasks = this.state.tasks;
+    if (task) {
+      let tasks = this.state.tasks;
 
-    tasks.push({id: (getDate()), value: task});
+      tasks.push({id: (getDate()), value: task});
 
-    this.setState({ tasks: tasks })
+      this.setState({ tasks: tasks })
+    }
   }
 
   removeTask(task) {
