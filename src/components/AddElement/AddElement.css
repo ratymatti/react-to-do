@@ -41,6 +41,7 @@
     background-color: var(--darker);
     color: var(--sand);
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .addTasks button:hover {
@@ -49,6 +50,6 @@
     -webkit-box-shadow: inset 0px 0px 5px black;
      -moz-box-shadow: inset 0px 0px 5px black;
           box-shadow: inset 0px 0px 5px black;
-   outline: none;
+    outline: none;
 }
 
