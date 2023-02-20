@@ -1,9 +1,9 @@
 :root {
     --background: #FE5F55;
-    --darkest: #4F6367;
-    --darker: #7A9E9F;
-    --dark: #B8D8D8;
-    --sand: #EEF5DB;
+    --darkest: white;
+    --darker: white;
+    --dark: white;
+    --sand: black;
   }
 
 .tasks {
