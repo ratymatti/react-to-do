@@ -24,15 +24,20 @@
 }
 
 .tasks button {
-    background-color: var(--darkest);
+    background-color: var(--darker);
+    color: var(--sand);
     border-radius: 5px;
     border: 0px;
     margin: 5px;
     width: 2rem;
     font-weight: bold;
-    color: var(--darker);
 }
 
 .tasks button:hover {
     cursor: pointer;
+    background-color: var(--darkest);
+    -webkit-box-shadow: inset 0px 0px 5px black;
+     -moz-box-shadow: inset 0px 0px 5px black;
+          box-shadow: inset 0px 0px 5px black;
+    outline: none;
 }
