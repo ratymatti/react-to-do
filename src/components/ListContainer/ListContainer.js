@@ -1,6 +1,7 @@
 import React from "react";
 import "./ListContainer.css";
 import ListElement from "../ListElement/ListElement";
+import RemoveAll from "../RemoveAll/RemoveAll";
 
 class ListContainer extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class ListContainer extends React.Component {
                     }) 
                     }
                 </div>}
+               {this.props.taskList.length > 1 && <RemoveAll removeAll={this.props.removeAll} />}
             </div>    
         )
     }

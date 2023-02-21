@@ -16,6 +16,7 @@ class App extends React.Component {
 
     this.addTask = this.addTask.bind(this);
     this.removeTask = this.removeTask.bind(this);
+    this.removeAll = this.removeAll.bind(this);
   }
 
   addTask(task) {
@@ -36,6 +37,10 @@ class App extends React.Component {
     this.setState({ tasks: tasksToRemovedFrom});
   }
 
+  removeAll() {
+    this.setState({ tasks: [] });
+  }
+
   render() {
     return (
       <div className="App">
@@ -45,7 +50,8 @@ class App extends React.Component {
           </div>
           <AddElement onAdd={this.addTask} />
           <ListContainer  taskList={this.state.tasks}
-                          onRemove={this.removeTask} />
+                          onRemove={this.removeTask}
+                          removeAll={this.removeAll} />
       </div>
     );
   }

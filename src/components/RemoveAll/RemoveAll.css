@@ -1,0 +1,27 @@
+
+:root {
+    --background: #FE5F55;
+    --darkest: #4F6367;
+    --darker: #7A9E9F;
+    --dark: #B8D8D8;
+    --darkColor: black;
+  }
+
+  .removeAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 10px;
+  }
+
+  .removeAll button {
+    background-color: var(--darker);
+    color: var(--dark);
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .removeAll button:hover {
+    background-color: var(--background);
+    cursor: pointer;
+  }
