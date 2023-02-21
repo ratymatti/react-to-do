@@ -6,10 +6,10 @@ const setDate = () => {
     let date = new Date();
 
     date = { 
-        day: date.getDate(), 
+        day: date.getDate(),
         month: date.toLocaleString('default', { month: 'short' }).toUpperCase(), 
         year: date.getFullYear() 
-    }
+    } 
 
     return (
         <div className="Date">

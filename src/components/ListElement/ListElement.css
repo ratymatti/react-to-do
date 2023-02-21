@@ -37,8 +37,5 @@
 .tasks button:hover {
     cursor: pointer;
     background-color: var(--background);
-    -webkit-box-shadow: inset 0px 0px 5px black;
-     -moz-box-shadow: inset 0px 0px 5px black;
-          box-shadow: inset 0px 0px 5px black;
     outline: none;
 }
