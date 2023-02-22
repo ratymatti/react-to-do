@@ -14,7 +14,10 @@ class ListElement extends React.Component {
     render() {
         return (
             <div className="tasks">
+                <div className="text">
                 <p>{this.props.task.value}</p>
+                </div>
+                
                 <button onClick={this.removeTask}>x</button>
             </div>
         )

@@ -7,7 +7,7 @@ class ListContainer extends React.Component {
     render() {
         return (
             <div>
-                {this.props.taskList.length !== 0 && <div className="tasksList">
+                {this.props.taskList.length > 0 && <div className="tasksList">
                     {
                     this.props.taskList.map(task => {
                             return <ListElement     task={task}

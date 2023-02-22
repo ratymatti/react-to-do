@@ -43,4 +43,47 @@
     flex-direction: column;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Date {
+        margin-top: 5px;
+        width: 120px;
+        justify-content: space-between;
+    }
+
+    .monthAndYear {
+        flex-direction: row;
+        margin-left: 0px;
+        justify-content: space-between;
+        width: 65px;
+    }
+
+    .Day {
+        font-size: 1.2rem;
+        height: 1.2rem;
+        justify-content: center;
+    }
+
+    .year, .month {
+        font-size: 0.6rem;
+        height: 20px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
 
