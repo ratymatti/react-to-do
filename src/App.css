@@ -9,7 +9,7 @@
 .App {
   background-color: var(--darkColor);
   text-align: center;
-  height: 400px;
+  min-height: 400px;
   width: 600px;
   padding: 0px 15px 20px;
   margin-top: 50px;
