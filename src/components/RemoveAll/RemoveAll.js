@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './RemoveAll.css'
+import './RemoveAll.css';
 
 class RemoveAll extends Component {
     render() {
