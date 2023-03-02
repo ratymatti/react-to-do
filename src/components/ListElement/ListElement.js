@@ -1,5 +1,6 @@
 import React from "react";
 import "./ListElement.css";
+import { FaTrashAlt } from 'react-icons/fa';
 
 class ListElement extends React.Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class ListElement extends React.Component {
                 <p>{this.props.task.value}</p>
                 </div>
                 
-                <button onClick={this.removeTask}>x</button>
+                <button onClick={this.removeTask}><FaTrashAlt size='1rem' /></button>
             </div>
         )
     }
