@@ -15,13 +15,13 @@ class AddElement extends React.Component {
 
     addNewTask() {
         this.props.onAdd(this.state.taskToAdd);
-        this.setState({ taskToAdd: '' });
+        this.setState({ ...this.state, taskToAdd: '' });
     }
 
     handleChange(event) {
 
         if (event.target.value.length <= 48) {
-            this.setState({ taskToAdd: event.target.value });
+            this.setState({ ...this.state, taskToAdd: event.target.value });
         } else {
             alert('Input length is limited to 48 characters');
         }

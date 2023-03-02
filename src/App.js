@@ -25,7 +25,7 @@ class App extends React.Component {
 
       tasks.push({id: (getDate()), value: task});
 
-      this.setState({ tasks: tasks })
+      this.setState({ ...this.state, tasks: tasks })
     }
   }
 
@@ -34,11 +34,11 @@ class App extends React.Component {
 
     tasksToRemovedFrom = tasksToRemovedFrom.filter(currentTask => currentTask.id !== task.id);
 
-    this.setState({ tasks: tasksToRemovedFrom});
+    this.setState({ ...this.state, tasks: tasksToRemovedFrom});
   }
 
   removeAll() {
-    this.setState({ tasks: [] });
+    this.setState({ ...this.state, tasks: [] });
   }
 
   render() {
